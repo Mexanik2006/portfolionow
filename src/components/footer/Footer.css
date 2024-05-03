@@ -27,6 +27,7 @@
 @media (max-width: 767px) {
     .footer-copywright {
         text-align: center;
+        margin: 0;
     }
 
     .footer-body {

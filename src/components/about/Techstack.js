@@ -7,7 +7,7 @@ import { FaCss3Alt } from "react-icons/fa";
 
 function Techstack() {
   return (<div className="w-full">
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }} className="flex mt-[30px] w-full">
+    <Row style={{ justifyContent: "center", paddingBottom: "50px" }} className="flex mt-[30px] w-full teachsctackrow">
       <Col xs={4} md={2} className="tech-icons">
         <ImHtmlFive className="html-icon" />
       </Col>
@@ -24,8 +24,7 @@ function Techstack() {
         <DiJavascript1 className="javascript-icon" />
       </Col>
     </Row>
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }} className="flex mt-[-20px]">
-
+    <Row style={{ justifyContent: "center", paddingBottom: "50px" }} className="flex mt-[-20px] teachsctackrow">
       <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 className="javascript-icon" />
       </Col>

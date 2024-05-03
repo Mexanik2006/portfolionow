@@ -1,5 +1,6 @@
 import React from "react";
 import { ImPointRight } from "react-icons/im";
+import "./AboutMedia.css"
 
 function AboutCard() {
     return (

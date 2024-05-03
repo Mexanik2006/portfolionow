@@ -54,7 +54,7 @@
 .home-about-social-links li {
     display: inline-block;
     padding-right: 15px;
-    padding-left: 15px;
+        padding-left: 15px;
 }
 
 .home-about-social-links li a {
@@ -132,4 +132,24 @@
     .home-about-social {
         display: none;
     }
+}
+@media screen and (max-width: 768px) {
+    .home-about-social-links li {
+        padding: 0;
+        margin: 0;
+    }
+
+    .home-about-social-links li a {
+        width: 50px;
+        height: 50px;
+        line-height: 1em;
+    }
+
+    .home-about-social-links {
+        max-width: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
 }

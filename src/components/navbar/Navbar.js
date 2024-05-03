@@ -4,9 +4,9 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 function Navbar() {
     const navigation = [
-        { name: 'Home', href: '#', current: true },
+        { name: 'Home', href: '/', current: true },
         { name: 'About', href: '/about', current: false },
-        { name: 'Projects', href: '#', current: false },
+        { name: 'Projects', href: '/project', current: false },
         { name: 'Contact', href: '#', current: false },
     ]
     function classNames(...classes) {
@@ -14,7 +14,7 @@ function Navbar() {
     }
     return (
         <div className='Navbar'>
-            <Disclosure as="nav" className="backdrop-blur-md w-[100%] fixed">
+            <Disclosure as="nav" className="backdrop-blur-md w-[100%] fixed z-[9999]">
                 {({ open }) => (
                     <>
                         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">

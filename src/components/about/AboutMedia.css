@@ -1,0 +1,31 @@
+@media screen and (max-width: 768px) {
+    .quoteCard__view {
+        font-size: 1.2em;
+    }
+
+    .teachsctackrow {
+        margin-top: 20;
+        display: block;
+    }
+
+    .teachsctackrow:nth-child(2) {
+        margin-top: -60px;
+        display: block;
+    }
+
+    .tech-icons {
+        margin-bottom: 10px;
+    }
+
+    .tools_about {
+        display: block;
+    }
+
+    .tools_media {
+        margin-top: 0px;
+    }
+}
+
+.about_title_media {
+    font-size: 20px;
+}

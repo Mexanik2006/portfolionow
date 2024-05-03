@@ -4,7 +4,7 @@ import { SiLinux, SiVisualstudiocode, SiGithub } from "react-icons/si";
 
 function Toolstack() {
     return (
-        <Row style={{ justifyContent: "center", paddingBottom: "50px" }} className="flex">
+        <Row style={{ justifyContent: "center", paddingBottom: "50px" }} className="flex tools_about">
             <Col xs={4} md={2} className="tech-icons m-[15px] p-[25px]">
                 <SiGithub className="github-icon" />
             </Col>

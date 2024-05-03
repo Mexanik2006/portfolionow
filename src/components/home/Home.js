@@ -11,14 +11,14 @@ function Home() {
                 </div>
 
                 <div className="home_titlt text-[2.4em]">
-                    <div className="">
+                    <div className="firsname">
                         <span className='text-[#06285E]'>Welcome,</span> <span className='text-[white]'>My Portfolio 👋🏻,</span>
                     </div>
-                    <div className="">
-                        <span className='text-[#06285E]'>I'm</span> <span className='text-[white]'>Axmadullayev Sadriddin,</span>
+                    <div className="firsname">
+                        <span className='text-[#06285E]'>I'm</span> <span className='text-[white] '>Axmadullayev Sadriddin,</span>
                     </div>
                 </div>
-                <div className="text-[2em] text-[white] font-bold pt-[20px]">
+                <div className="text-[2em] text-[white] font-bold pt-[20px] trpografiy">
                     <Typewriter
                         options={{
                             strings: [
@@ -48,7 +48,7 @@ function Home() {
                     <h1 className='text-[white] text-[60px]  font-medium'><span className='text-[red] font-bold'>Sadriddin</span> Ahmadullayev</h1>
                 </div> */}
 
-                <div className="mt-[30vh]">
+                <div className="mt-[30vh] home2">
                     <Home2 />
                 </div>
             </div>

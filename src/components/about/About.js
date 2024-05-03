@@ -5,10 +5,12 @@ import "./About.css";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../image/about.png";
 import Toolstack from "./Toolstack";
+import Navbar from "../navbar/Navbar"
 
 function About() {
     return (
         <div className="About">
+            {/* <Navbar /> */}
             <div className="about__section">
                 <Container>
                     <Row
@@ -22,8 +24,9 @@ function About() {
                                 paddingTop: "30px",
                                 paddingBottom: "50px",
                             }}
+                            className="about_title_media"
                         >
-                            <h1 style={{ fontSize: "2.8em", paddingBottom: "20px", color: "#06285E" }}>
+                            <h1 style={{ fontSize: "2.8em", paddingBottom: "20px", color: "#06285E" }} className="about_title_media">
                                 Know Who <strong className="purple">I'm</strong>
                             </h1>
                             <Aboutcard />
@@ -36,12 +39,12 @@ function About() {
                             <img src={laptopImg} alt="about" className="img-fluid w-[700px]" />
                         </Col>
                     </Row>
-                    <h1 className="project-heading text-[white] text-[40px] font-medium">
+                    <h1 className="profetsional_about project-heading text-[white] text-[40px] font-medium">
                         Professional <strong className="purple text-[#07234F]">Skillset </strong>{" "}
-                        <h3 style={{ marginLeft: "20px" }} className="text-[25px]">Which I Used In My Projects</h3>
+                        <h3 style={{ marginLeft: "20px" }} className="text-[25px] which_media">Which I Used In My Projects</h3>
                     </h1>
                     <Techstack />
-                    <h1 className="project-heading text-[white] text-[40px] font-medium mt-[50px]">
+                    <h1 className="tools_media project-heading text-[white] text-[40px] font-medium mt-[50px]">
                         <strong className="purple text-[#07234F]">Tools</strong> I use
                     </h1>
                     <Toolstack />
