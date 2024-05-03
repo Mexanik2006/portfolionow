@@ -1,0 +1,122 @@
+.About {
+    background-image: radial-gradient(circle at 84% 82%, rgba(217, 217, 217, 0.03) 0%, rgba(217, 217, 217, 0.03) 21%, transparent 21%, transparent 100%), radial-gradient(circle at 75% 56%, rgba(3, 3, 3, 0.03) 0%, rgba(3, 3, 3, 0.03) 30%, transparent 30%, transparent 100%), radial-gradient(circle at 74% 53%, rgba(153, 153, 153, 0.03) 0%, rgba(153, 153, 153, 0.03) 95%, transparent 95%, transparent 100%), radial-gradient(circle at 86% 43%, rgba(209, 209, 209, 0.03) 0%, rgba(209, 209, 209, 0.03) 83%, transparent 83%, transparent 100%), radial-gradient(circle at 64% 88%, rgba(192, 192, 192, 0.03) 0%, rgba(192, 192, 192, 0.03) 2%, transparent 2%, transparent 100%), radial-gradient(circle at 73% 77%, rgba(205, 205, 205, 0.03) 0%, rgba(205, 205, 205, 0.03) 18%, transparent 18%, transparent 100%), radial-gradient(circle at 57% 51%, rgba(161, 161, 161, 0.03) 0%, rgba(161, 161, 161, 0.03) 64%, transparent 64%, transparent 100%), radial-gradient(circle at 40% 84%, rgba(115, 115, 115, 0.03) 0%, rgba(115, 115, 115, 0.03) 14%, transparent 14%, transparent 100%), linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
+    padding-left: 150px;
+}
+
+.about__section {
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 30px;
+    /* background-color: var(--background-color); */
+    min-height: 100vh;
+    object-fit: contain;
+    color: var(--text-color);
+
+}
+
+.quoteCard__view {
+    margin-bottom: 150px;
+}
+
+.blockquote {
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.tech-icons {
+    font-size: 4.5em;
+    margin: 15px;
+    padding: 25px;
+    opacity: 0.93;
+    max-width: 1000px;
+    border: 1.7px solid var(--main-color);
+    border-radius: 5px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: contrast(150%);
+    box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137);
+    overflow: hidden;
+    transition: all 0.4s ease 0s;
+    color: var(--text-color);
+}
+
+.tech-icons .html-icon {
+    color: #e94537;
+}
+
+.tech-icons .css-icon {
+    color: #254bdd;
+}
+
+.tech-icons .tailwind-icon {
+    color: #54bdf8;
+}
+
+.tech-icons .bootstrap-icon {
+    color: #7b49f2;
+}
+
+.tech-icons .javascript-icon {
+    border-radius: 5px;
+    background-color: #efd84b;
+}
+
+.tech-icons .react-icon {
+    color: #61d3f3;
+    background-color: #212121;
+    border-radius: 5px;
+}
+
+.tech-icons .firebase-icon {
+    color: #f2a643;
+}
+
+.tech-icons .node-icon {
+    color: #71a861;
+}
+
+.tech-icons .html-icon {
+    color: #e94537;
+}
+
+.tech-icons .visual-icon {
+    color: #3787cb;
+}
+
+@media (max-width: 767px) {
+    .tech-icons {
+        margin: 10px;
+    }
+}
+
+.tech-icons:hover {
+    transform: scale(1.05);
+    overflow: hidden;
+    border: 2.2px solid var(--main-color);
+    filter: contrast(200%);
+}
+
+.tech-icon-images {
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.about-activity {
+    list-style: none;
+    text-align: left;
+    padding-left: 1px;
+    color: var(--text-color);
+}
+
+@media (max-width: 767px) {
+    .about__img {
+        padding-top: 0;
+        display: none;
+    }
+
+    .about__row {
+        margin-top: -3rem !important;
+    }
+}
