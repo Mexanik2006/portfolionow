@@ -3,10 +3,11 @@ import { CgEnter } from "react-icons/cg";
 import { FaArrowAltCircleDown } from "react-icons/fa";
 import "./Projects.css";
 import axios from "../../api/Api";
+import { RotatingLines } from "react-loader-spinner";
 
 function Projects() {
     const [news, setNews] = useState([]);
-
+    const [loaderspin, setLoaderSpin] = useState(true); // Initialize loaderspin as true
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -15,24 +16,17 @@ function Projects() {
             } catch (error) {
                 console.log(error);
             } finally {
-                // setIsLoading(false)
-
+                setLoaderSpin(false); // Set loaderspin to false when data is fetched
             }
         };
-        // setIsLoading(true);
         fetchData();
-    }, []); // Empty dependency array to fetch data only once on component mount
+    }, []);
 
     const cardInfo = [
         {
             image: news.image,
             route: news.projectlink,
-        },
-        // {
-        //     image: "https://i.ibb.co/h2Pvyx8/APPLE-CALCULATOR.jpg",
-        //     route: "https://apple-calculator-clone.netlify.app/",
-        // },
-        // Келгуси карта элементлар...
+        }
     ];
 
     const [projectCard, setProjectCard] = useState(true);
@@ -44,7 +38,14 @@ function Projects() {
             setProjectCard(false);
         }
     }
-    window.addEventListener("scroll", scrollHandler);
+
+    useEffect(() => {
+        window.addEventListener("scroll", scrollHandler);
+        return () => {
+            window.removeEventListener("scroll", scrollHandler);
+        };
+    }, []); // Add an empty dependency array to ensure the event listener is added only once
+
     return (
         <div className="Project">
             <div className="project__section">
@@ -73,19 +74,32 @@ function Projects() {
                     </div>
                 </div>
                 <div className="project__cardSection">
-                    {news.map((card, index) => (
-                        <div key={index} className="project__card">
-                            <img alt="" variant="top" className="card__image" src={card.image} />
-                            <div className="project__IconsContainer">
-                                <div className="project__techIcons">
-                                    <h5>Enter This Webpage</h5>
-                                    <a href={card.projectlink} target="_blank" rel="noreferrer">
-                                        <CgEnter />
-                                    </a>
+                    {loaderspin ? (
+                        <div className="loaderspin w-[full] h-[100vh] flex items-center justify-center">
+                            <RotatingLines
+                                visible={true}
+                                height={96}
+                                width={96}
+                                strokeColor="white"
+                                speedMultiplier={0.75}
+                                ariaLabel="rotating-lines-loading"
+                            />
+                        </div>
+                    ) : (
+                        news.map((card, index) => (
+                            <div key={index} className="project__card">
+                                <img alt="" variant="top" className="card__image" src={card.image} />
+                                <div className="project__IconsContainer">
+                                    <div className="project__techIcons">
+                                        <h5>Enter This Webpage</h5>
+                                        <a href={card.projectlink} target="_blank" rel="noreferrer">
+                                            <CgEnter />
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    ))}
+                        ))
+                    )}
                 </div>
             </div>
         </div>
