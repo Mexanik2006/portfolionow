@@ -1,6 +1,8 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { SiLinux, SiVisualstudiocode, SiGithub } from "react-icons/si";
+import { FaWindows } from "react-icons/fa";
+import { IoLogoVercel } from "react-icons/io5";
+import { SiLinux, SiVisualstudiocode, SiGithub, SiRender } from "react-icons/si";
 
 function Toolstack() {
     return (
@@ -9,10 +11,16 @@ function Toolstack() {
                 <SiGithub className="github-icon" />
             </Col>
             <Col xs={4} md={2} className="tech-icons">
-                <SiLinux className="linux-icon" />
+                <FaWindows className="text-[#0074CD]" />
             </Col>
             <Col xs={4} md={2} className="tech-icons">
                 <SiVisualstudiocode className="visual-icon" />
+            </Col>
+            <Col xs={4} md={2} className="tech-icons">
+                <IoLogoVercel className="text-[black]" />
+            </Col>
+            <Col xs={4} md={2} className="tech-icons">
+                <SiRender className="text-[black]" />
             </Col>
         </Row>
     );

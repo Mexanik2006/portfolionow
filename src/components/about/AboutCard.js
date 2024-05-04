@@ -17,13 +17,13 @@ function AboutCard() {
                 </p>
                 <ul className="ml-[50px] mt-[20px] mb-[20px]">
                     <li className="about-activity flex items-center">
-                        <ImPointRight className="mr-[12px] " /> Reading Books
+                        <ImPointRight className="mr-[12px] " /> Creating web sites
                     </li>
                     <li className="about-activity flex items-center">
-                        <ImPointRight className="mr-[12px] " /> Learning other tools
+                        <ImPointRight className="mr-[12px] " /> Learning other programms
                     </li>
                     <li className="about-activity flex items-center">
-                        <ImPointRight className="mr-[12px] " /> Travelling
+                        <ImPointRight className="mr-[12px] " /> Coding
                     </li>
                 </ul>
 

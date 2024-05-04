@@ -41,6 +41,11 @@
     transition: all 0.4s ease 0s;
     color: var(--text-color);
 }
+.tech-icons img {
+    width: 84px;
+    height: 84px;
+    object-fit: contain;
+}
 
 .tech-icons .html-icon {
     color: #e94537;
