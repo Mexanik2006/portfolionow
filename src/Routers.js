@@ -7,6 +7,7 @@ import Footer from './components/footer/Footer';
 import Projects from './components/project/Projects';
 import Loader from './components/loader-spiner/Loader';
 import { AuthContext } from './context/AuthContext';
+import Admin from './pages/admin/Admin';
 
 function Routers() {
     const { setIsLoading } = useContext(AuthContext);
@@ -32,6 +33,7 @@ function Routers() {
                             <Route path='/' element={<App />} />
                             <Route path='/about' element={<About />} />
                             <Route path='/project' element={<Projects />} />
+                            <Route path='/admin' element={<Admin />} />
                         </Routes>
                         <Footer />
                     </BrowserRouter>

@@ -1,18 +1,37 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { CgEnter } from "react-icons/cg";
 import { FaArrowAltCircleDown } from "react-icons/fa";
 import "./Projects.css";
+import axios from "../../api/Api";
 
 function Projects() {
+    const [news, setNews] = useState([]);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await axios.get("/project/get");
+                setNews(response.data);
+            } catch (error) {
+                console.log(error);
+            } finally {
+                // setIsLoading(false)
+
+            }
+        };
+        // setIsLoading(true);
+        fetchData();
+    }, []); // Empty dependency array to fetch data only once on component mount
+
     const cardInfo = [
         {
-            image: "https://i.ibb.co/Tqg8762/whats-app.jpg",
-            route: "https://whatsapp-clone-ten-cyan.vercel.app/",
+            image: news.image,
+            route: news.projectlink,
         },
-        {
-            image: "https://i.ibb.co/h2Pvyx8/APPLE-CALCULATOR.jpg",
-            route: "https://apple-calculator-clone.netlify.app/",
-        },
+        // {
+        //     image: "https://i.ibb.co/h2Pvyx8/APPLE-CALCULATOR.jpg",
+        //     route: "https://apple-calculator-clone.netlify.app/",
+        // },
         // Келгуси карта элементлар...
     ];
 
@@ -26,7 +45,6 @@ function Projects() {
         }
     }
     window.addEventListener("scroll", scrollHandler);
-
     return (
         <div className="Project">
             <div className="project__section">
@@ -55,13 +73,13 @@ function Projects() {
                     </div>
                 </div>
                 <div className="project__cardSection">
-                    {cardInfo.map((card, index) => (
+                    {news.map((card, index) => (
                         <div key={index} className="project__card">
                             <img alt="" variant="top" className="card__image" src={card.image} />
                             <div className="project__IconsContainer">
                                 <div className="project__techIcons">
                                     <h5>Enter This Webpage</h5>
-                                    <a href={card.route} target="_blank" rel="noreferrer">
+                                    <a href={card.projectlink} target="_blank" rel="noreferrer">
                                         <CgEnter />
                                     </a>
                                 </div>
