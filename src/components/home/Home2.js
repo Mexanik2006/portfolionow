@@ -38,10 +38,6 @@ function Home2() {
                                     Modern Javascript and React.js Library and Frameworks
                                 </span>
                             </span>
-                            &nbsp; like
-                            <span className="italic">
-                                <span className="text-purple-600"> Next.js</span>
-                            </span>
                         </p>
                     </div>
                     <div className="lg:w-1/3">

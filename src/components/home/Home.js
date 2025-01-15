@@ -22,10 +22,10 @@ function Home() {
                     <Typewriter
                         options={{
                             strings: [
-                                "Web Developer",
                                 "JavaScript Developer",
                                 "React JS developer",
                                 "Node JS developer",
+                                "Full-stack developer",
                             ],
                             autoStart: true,
                             loop: true,

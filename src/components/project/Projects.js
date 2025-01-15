@@ -58,7 +58,7 @@ function Projects() {
                         I have nearly 2 years of experience with React.js. I believe in the
                         strong dedication in each project of my clients. Besides, I can help
                         you with: <br /> 1. HTML5 and Css <br /> 2. Vanilla JavaScript
-                        projects <br /> 3. React JS and Next.js projects <br /> 4.Tailwinds
+                        projects <br /> 3. React JS and Node.js projects <br /> 4.Tailwinds
                         and bootstrap <br /> 5.Node.js and MongoDB database || firebase
                     </p>
 
@@ -66,7 +66,7 @@ function Projects() {
                         <h3>Here is my resume</h3>
                         <FaArrowAltCircleDown />
                         <a
-                            href="https://drive.google.com/file/d/1F5faGGbXsP6QCA7VtEPseVBFqFH9P5u3/view?usp=sharing"
+                            href="https://drive.google.com/file/d/1MlkTdJCxkgeIDADDStva_UBz04E4H8Gn/view?usp=drive_link"
                             className="resume__btn"
                         >
                             Download Resume
